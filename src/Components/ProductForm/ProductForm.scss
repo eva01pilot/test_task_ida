@@ -1,0 +1,94 @@
+@import 'src/variables';
+.form-placeholder{
+    width: 20.75rem;
+    height:100vh;
+}
+form{
+    position: fixed;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $colorSecondary;
+    width: 20.75rem;
+    height:27.5rem;
+    padding-left:1.5rem;
+    label{
+        padding-bottom: 0.25rem;
+        width: 17.75rem;
+        font-size: 0.625rem;
+        font-weight: 400;
+        line-height: 13px;
+        letter-spacing: -0.02rem;
+    }
+    label:nth-child(1){
+        padding-top: 1.5rem;
+    }
+    input[type=text]{
+        box-sizing: border-box;
+        width: 17.75rem;
+        height: 2.25rem;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+        border: 0px;
+        border-radius: 0.25rem;
+        padding: 0.625rem 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.75rem;
+        }
+        input::placeholder{
+            font-family: 'Open Sans Pro', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+            font-size: 0.75rem;
+    }
+    input[type=text]:nth-child(4n){
+        margin-bottom: 0px;
+    }
+    textarea{
+        box-sizing: border-box;
+        width: 17.75rem !important;
+        height: 6.75rem !important;
+        font-family: 'Open Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: 15px;
+        font-size: 0.75rem;
+        padding: 0.625rem 1rem;
+        resize: none;
+        border: 0px;
+        border-radius: 0.25rem;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1rem;
+    }
+    textarea::placeholder{
+        font-family: 'Open Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        font-size: 0.75rem;
+    }
+    input[type="submit"]{
+        width: 17.75rem;
+        height: 2.25rem;
+        margin-top: 1.5rem;
+        background: #EEEEEE;
+        border: 0px;
+        border-radius: 10px; 
+        cursor:pointer;
+        color: #b4b4b4;
+    }
+}
+
+@media screen and (max-width:500px){
+    .form-placeholder{
+        width: 77vw;
+        height: fit-content;
+        text-align: center;
+    }
+    form{
+        position: initial;
+        align-self:center;
+    }
+}

@@ -1,0 +1,16 @@
+.gridcards{
+    width: 84rem;
+    gap:1rem;
+    display:grid;
+    grid-template-columns: 20.75rem 20.75rem 20.75rem 20.75rem;
+    position: relative;
+}
+@media screen and (max-width:500px){
+    .gridcards{
+        width: 80vw;
+        display:grid;
+        grid-template-columns: 20.75rem;
+        position: relative;
+        margin-left: 1rem;
+    }
+}

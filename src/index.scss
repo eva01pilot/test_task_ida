@@ -1,0 +1,13 @@
+@import 'src/variables';
+body {
+  background-color:$colorPrimary;
+  margin: 2rem 2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+@media screen and (max-width:500px){
+  body {
+    background-color:$colorPrimary;
+    margin: 1rem 0rem;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
